@@ -1,0 +1,263 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #34495e; /* Azul oscuro */
+    color: #fff; /* Blanco para texto en fondo oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1500px;
+    padding: 20px;
+    margin: auto; /* Centrar el contenedor */
+    background-color: #2c3e50; /* Gris oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Encabezado y opciones */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #f39c12; /* Amarillo brillante */
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Formulario de búsqueda */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que los inputs se ajusten en pantallas pequeñas */
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%; /* Hacer que el campo ocupe el ancho completo en pantallas pequeñas */
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-form input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff; /* Azul brillante */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    min-width: 120px;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Botón Añadir Computador */
+.add-button {
+    display: block; /* Cambiar a bloque */
+    background-color: #28a745; /* Verde brillante */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%; /* Hacer que el botón se ajuste al contenedor */
+    max-width: 200px;
+    margin: 20px auto; /* Centrado horizontal */
+    text-align: center; /* Centrado del texto dentro del botón */
+}
+
+.add-button:hover {
+    background-color: #218838; /* Verde más oscuro */
+}
+
+/* Tabla de inventario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    table-layout: fixed; /* Asegura que las columnas se ajusten de manera coherente */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    word-wrap: break-word; /* Para que el texto largo se ajuste dentro de las celdas */
+    color: #333; /* Color de texto gris oscuro para mejor contraste */
+}
+
+th {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    vertical-align: top; /* Alinear contenido en la parte superior */
+}
+
+/* Ajustar el ancho de las columnas de la tabla */
+table th:nth-child(1), table td:nth-child(1) {
+    width: 50px; /* Hacer la columna del ID más pequeña */
+}
+
+table th:nth-child(6), table td:nth-child(6) { /* Asumiendo que las opciones están en la sexta columna */
+    width: 200px; /* Hacer la columna de opciones más grande */
+}
+
+/* Alternar color de fondo para filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para los botones de acción */
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-start; /* Asegura que los botones se alineen a la izquierda */
+    margin-top: 10px; /* Añadir un margen superior para separarlos de la tabla */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas pequeñas */
+}
+
+.edit, .delete, .voucher {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block; /* Para asegurarnos de que no se apilen verticalmente */
+    white-space: nowrap; /* Evita que el texto se divida */
+}
+
+/* Estilo para los botones de acción */
+.voucher {
+    background-color: #218838; /* Verde más oscuro */
+    color: white;
+}
+
+.voucher:hover {
+    background-color: #1e7e34; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+}
+
+/* Estilo para el título dentro del modal */
+.modal-content h2 {
+    color: #007bff; /* Color azul brillante para el título */
+}
+
+/* Estilo para los campos del formulario */
+#adminUser, #adminPass {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Fondo claro para los campos de entrada */
+}
+
+/* Botones dentro del modal */
+.modal-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3; /* Azul más oscuro cuando se pasa el cursor */
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .action-buttons {
+        justify-content: center; /* Centrar los botones en pantallas pequeñas */
+        flex-direction: column; /* Apilar los botones verticalmente en pantallas pequeñas */
+    }
+
+    .edit, .delete, .voucher {
+        width: 100%; /* Hacer que los botones ocupen el ancho completo en pantallas pequeñas */
+        margin-bottom: 10px; /* Separar los botones */
+    }
+
+    .logout-form {
+        text-align: center;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-button {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 12px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+        padding: 8px;
+    }
+
+    table th:nth-child(1), 
+    table td:nth-child(1),
+    table th:nth-child(2), 
+    table td:nth-child(2),
+    table th:nth-child(3), 
+    table td:nth-child(3),
+    table th:nth-child(4), 
+    table td:nth-child(4),
+    table th:nth-child(5), 
+    table td:nth-child(5) {
+        width: auto; /* Dejar que las columnas se ajusten según el contenido */
+    }
+
+    .logout-form {
+        text-align: center;
+    }
+}
+
+/* Estilo del formulario de cerrar sesión */
+.logout-form {
+    text-align: right;
+}
+
+.logout-form input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #dc3545; /* Rojo brillante */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-form input[type="submit"]:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+}

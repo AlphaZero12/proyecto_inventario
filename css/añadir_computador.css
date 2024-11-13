@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* Azul oscuro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #f39c12; /* Amarillo brillante */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #34495e; /* Gris oscuro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 500px; /* Ancho máximo */
+    margin: auto; /* Centra el formulario */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /* Hace que las etiquetas se muestren como bloques */
+    margin-bottom: 8px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #fff; /* Blanco para las etiquetas */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio entre los campos */
+    font-size: 16px; /* Tamaño del texto dentro de los campos */
+    color: #333; /* Color del texto dentro de los campos */
+    background-color: #ecf0f1; /* Blanco suave para los campos */
+}
+
+/* Estilo para los campos cuando tienen foco */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #f39c12; /* Amarillo cuando el campo tiene el foco */
+    outline: none; /* Elimina el contorno por defecto */
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    background-color: #3498db; /* Azul brillante para el botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilo para el botón cuando pasa el mouse por encima */
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Azul más oscuro cuando se pasa el mouse */
+}
+
+/* Estilo para los mensajes de error o éxito */
+p {
+    color: #d9534f; /* Rojo para mensajes de error */
+    font-size: 16px;
+    text-align: center;
+}
+
+p.success {
+    color: #5bc0de; /* Azul claro para mensajes de éxito */
+}

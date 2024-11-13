@@ -1,0 +1,98 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del voucher */
+.voucher {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título del voucher */
+.voucher h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Estilo de las secciones de información del voucher */
+.voucher-content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.voucher-content p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.voucher-content strong {
+    color: #333;
+}
+
+/* Contenedor de botones en la parte inferior */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    color: white;
+    width: 120px;
+}
+
+/* Estilos específicos para cada botón */
+#printButton {
+    background-color: #4CAF50;
+}
+#printButton:hover {
+    background-color: #45a049;
+}
+
+#exportWordButton {
+    background-color: #0000FF;
+}
+#exportWordButton:hover {
+    background-color: #0000FF;
+}
+
+#exportPdfButton {
+    background-color: #e74c3c;
+}
+#exportPdfButton:hover {
+    background-color: #c0392b;
+}
+
+#exportExcelButton {
+    background-color:#4de622;
+}
+#exportExcelButton:hover {
+    background-color: #4de622;
+}
